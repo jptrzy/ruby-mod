@@ -2,6 +2,7 @@ package net.jptrzy.ruby;
 
 
 import net.fabricmc.api.ModInitializer;
+import net.jptrzy.ruby.registry.ItemsRegistry;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -11,6 +12,8 @@ public class Main implements ModInitializer {
 
     @Override
     public void onInitialize() {
+        ItemsRegistry.init();
+
         LOGGER.info("Hello Fabric world!");
     }
 }
