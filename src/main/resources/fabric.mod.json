@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "ruby",
+  "version": "${version}",
+
+  "name": "Ruby Mod",
+  "description": "This is an example description! Tell everyone what your mod is about!",
+  "authors": [
+    "jptrzy"
+  ],
+  "contact": {
+  },
+
+  "license": "GPL-3.0",
+  "icon": "assets/ruby/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.jptrzy.ruby.Main"
+    ]
+  },
+  "mixins": [],
+
+  "depends": {
+    "fabricloader": ">=0.11.3",
+    "fabric": "*",
+    "minecraft": "1.17.x",
+    "java": ">=16"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
